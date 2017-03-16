@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="500"
+    android:shareInterpolator="true"
+    >
+
+    <!--透明
+    fromAlpha  开始透明度(0-1)
+    toAlpha    结束透明度
+    -->
+    <alpha
+        android:fromAlpha="0"
+        android:toAlpha="1"></alpha>
+
+    <!--移动
+    fromXDelta 开始X坐标
+    fromYDelta 开始y坐标
+    toXDelta   结束x坐标
+    toYDelta   结束y坐标
+    -->
+    <translate
+        android:fromXDelta="0"
+        android:fromYDelta="100%"
+        android:toXDelta="0"
+
+        android:toYDelta="0%"
+        ></translate>
+    <!--旋转
+    fromDegrees  开始角度
+    toDegrees     结束角度
+    pivotX  中心点x坐标
+    pivotY  中心点y坐标
+    -->
+    <rotate
+        android:fromDegrees="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="360"></rotate>
+    <!--缩放
+
+    -->
+    <scale
+        android:fromXScale="0"
+        android:fromYScale="0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1"
+        android:toYScale="1"></scale>
+</set>

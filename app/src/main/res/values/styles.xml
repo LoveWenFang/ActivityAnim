@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">
+            @color/colorPrimary
+        </item>
+        <item name="colorPrimaryDark">
+            @color/colorPrimaryDark
+        </item>
+        <item name="colorAccent">
+            @color/colorAccent
+        </item>
+    </style>
+
+    <style name="Activity_theme_My" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--窗口背景-->
+        <item name="android:windowBackground">
+            @android:color/black
+        </item>
+        <!--无标题-->
+        <item name="android:windowNoTitle">
+            true
+        </item>
+        <!--窗口透明-->
+        <item name="android:windowIsTranslucent">
+            true
+        </item>
+        <!--背景模糊-->
+        <item name="android:backgroundDimEnabled">
+            true
+        </item>
+        <!--系统自带 侧面滑进滑出效果-->
+        <!--<item name="android:windowAnimationStyle">-->
+        <!--@android:style/Animation.Translucent-->
+        <!--</item>-->
+
+        自定义滑进滑出样式
+        <item name="android:windowAnimationStyle">
+            @style/FeelyouWindowAnimTheme
+        </item>
+    </style>
+    <!--当我们从 A1 启动 A2 时，A1 从屏幕上消失，这个动画叫做 android:activityOpenExitAnimation-->
+    <!--当我们从 A1 启动 A2 时，A2 出现在屏幕上，这个动画叫做 android:activityOpenEnterAnimation-->
+    <!--当我们从 A2 退出回到 A1 时，A2 从屏幕上消失，这个叫做 android:activityCloseExitAnimation-->
+    <!--当我们从 A2 退出回到 A1 时，A1 出现在屏幕上，这个叫做 android:activityCloseEnterAnimation-->
+    <style name="FeelyouWindowAnimTheme" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">
+            @anim/anim_activity_in
+        </item>
+        <item name="android:activityOpenExitAnimation">
+            @anim/anim_activity_in
+        </item>
+        <item name="android:activityCloseEnterAnimation">
+            @anim/anim_activity_out
+        </item>
+        <item name="android:activityCloseExitAnimation">
+            @anim/anim_activity_out
+        </item>
+    </style>
+
+</resources>
